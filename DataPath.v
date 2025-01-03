@@ -19,7 +19,7 @@ wire [5:0] pc_out;
 wire [7:0] a_side;
 
 IR ir(clk, reset, ld_ir, data_bus_in, ir_out);
-PC pc(clk, reset, inc_pc, ld_pc, ir_out[5:0], pc_out);
+PC pc(clk, reset, clr_pc, inc_pc, ld_pc, ir_out[5:0], pc_out);
 AC ac(clk, reset, ld_ac, data_bus_out, a_side);
 ALU alu(a_side, ir_out[5:0], pass_add, data_bus_out);
 

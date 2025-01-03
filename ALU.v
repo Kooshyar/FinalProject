@@ -12,7 +12,7 @@ module ALU (out_ac, out_ir, pass_add, out_alu);
 	
     
 
-    always @ (out_ac, out_ir, pass_add) begin 
+    always @ (out_ac, out_ir, pass_add, immediate) begin 
         case (pass_add) 
             1'b0 : out_alu = immediate + out_ac;
             1'b1 : out_alu = out_ac; 

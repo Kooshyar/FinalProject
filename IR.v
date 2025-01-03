@@ -4,7 +4,7 @@ input clk;
 input reset;
 input ld_ir; 
 input [7:0] data_bus_in;
-output reg [7:0] out_ir;
+output [7:0] out_ir;
 reg [7:0] d_reg;
 
 always @ (posedge clk) begin 

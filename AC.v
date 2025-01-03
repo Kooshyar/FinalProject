@@ -3,7 +3,7 @@ input clk;
 input reset;
 input ld_ac;
 input [7:0] data_bus_in;
-output reg [7:0] out_ac;
+output [7:0] out_ac;
 reg [7:0] d_reg;
 
 always @ (posedge clk) begin

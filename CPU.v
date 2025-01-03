@@ -8,7 +8,7 @@ output rd_mem;
 output wr_mem;
 output [7:0] data_bus_out;
 
-wire ir_on_adr, pc_on_adr, ld_ir, ld_ac, inc_pc, clr_pc, pass_add;
+wire ir_on_adr, pc_on_adr, ld_ir, ld_ac, inc_pc, clr_pc, pass_add, ld_pc;
 wire [1:0] op_code;
 
 
